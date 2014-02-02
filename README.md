@@ -2,11 +2,13 @@ Game of life
 ================
 
 For more information about the game : 
-en.wikipedia.org/wiki/Conway's_Game_of_Life
+
+[http://en.wikipedia.org/wiki/Conway's_Game_of_Life/](http://en.wikipedia.org/wiki/Conway's_Game_of_Life/ "Game of Life")
 
 to run game :
-# php runGame.php
+
+`# php runGame.php`
 
 to run test :
 
-# php testGame.php
+`# php gameTest.php`
