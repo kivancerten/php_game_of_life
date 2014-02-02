@@ -5,7 +5,7 @@ require_once 'Cell.php';
 
 class Board implements BoardInterface
 {
-    const MAX_X = 50;
+    const MAX_X = 150;
     const MAX_Y = 50;
 
     /** @var array */

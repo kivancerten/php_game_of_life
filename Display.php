@@ -15,19 +15,26 @@ class Display
     {
         $output = '';
 
-        foreach ($boardMap as $eachLine) {
-            /** @var Cell $eachCell */
-            foreach ($eachLine as $eachCell) {
+        $columnCount = count($boardMap);
+        $lineCount = count($boardMap[0]);
 
-                //'█';
-                if ($eachCell->getStatus()) {
+        for ($line = 0; $line < $lineCount; $line++) {
+
+            for ($column = 0; $column < $columnCount; $column++) {
+
+                /** @var Cell $cell  */
+                $cell = $boardMap[$column][$line];
+
+                if ($cell->getStatus()) {
                     $output .= '▓';
                 } else {
                     $output .= '░';
                 }
             }
+
             $output .= "\n";
         }
+
 
         return $output;
     }
