@@ -21,7 +21,7 @@ class Game
     {
         while (true) {
             $this->board->runDisplay();
-            usleep(10000);
+            usleep(1000);
             $this->board->newGeneration();
         }
 
