@@ -28,7 +28,7 @@ class Display
                 if ($cell->getStatus()) {
                     $output .= '▓';
                 } else {
-                    $output .= '░';
+                    $output .= ' ';
                 }
             }
 
